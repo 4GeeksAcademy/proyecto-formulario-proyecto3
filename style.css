@@ -1,0 +1,8 @@
+body {
+    background-color: rgb(28, 27, 27);
+    margin: 100px
+}
+.color-payment {
+    background-color: rgb(125, 121, 121);
+    width: 39%;
+}
