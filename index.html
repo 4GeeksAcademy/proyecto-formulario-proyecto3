@@ -11,18 +11,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-    <body class="container">
-        <div class="card text-start">
-            <div class="card-header d-flex">
-                <b>Payment For Example</b>
+<body class="container">
+    <div class="card text-start">
+        <div class="card-header d-flex">
+            <b>Payment For Example</b>
+        </div>
+        <div class="card-body ">
+            <!-- alerta -->
+            <div class="alert alert-danger d-flex justify-content-start" role="alert">
+                A simple danger alert—check it out!
             </div>
-            <div class="card-body ">
-                <!-- alerta -->
-                <div class="alert alert-danger d-flex justify-content-start" role="alert">
-                    A simple danger alert—check it out!
-                </div>
-                <!-- formulario -->
-                <form class="row g-3">
+            <!-- formulario -->
+
+            <form>
+                <div class="row">
                     <!-- primera fila -->
                     <div class="col-md-5">
                         <label for="inputPassword4" class="form-label">Card #</label>
@@ -68,41 +70,45 @@
                         <input type="text" class="form-control" id="inputZip">
                     </div>
                     <!-- selector de pagos y-->
-                    <div class="col-md-6">
+                </div>
+                <div class="d-flex row justify-content-between">
+                    <div class="col-md-3 col-12">
                         <div>
                             <p>We Accept:</p>
                         </div>
                         <!-- <div class="bg-body-secondary"> -->
-                            <div class="bg-body-secondary bgcolor=gray"></div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                    value="option1">
-                                <label class="form-check-label" for="inlineRadio1">
-                                    <i class="fa-brands fa-cc-mastercard"></i>
-                                </label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                    value="option2">
-                                <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa"></i>
-                                </label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                                    value="option3">
-                                <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-paypal"></i>
-                                </label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                                    value="option4">
-                                <label class="form-check-label" for="inlineRadio3">
-                                    <i class="fa-brands fa-cc-amex"></i>
-                                </label>
-                            </div>
+
+                        <!-- el p-1 funciona para pantallas pequeñas y el p-md-3 funcina para pantallas grandes  -->
+                        <div class="bg-body-secondary bgcolor=gray p-1 p-md-3">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="inlineRadio1">
+                                <i class="fa-brands fa-cc-mastercard"></i>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa"></i>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                                value="option3">
+                            <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-paypal"></i>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                                value="option4">
+                            <label class="form-check-label" for="inlineRadio3">
+                                <i class="fa-brands fa-cc-amex"></i>
+                            </label>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6 col-12">
                         <div>
                             <label for="message-text" class="col-form-label">Message:</label>
                             <textarea class="form-control" id="message-text"></textarea>
@@ -111,15 +117,17 @@
                             </div>
                         </div>
                     </div>
-                </form>
-            <!-- botones -->
-            <div class="card-footer text-body-secondary d-flex justify-content-end gap-2">
-                <button class="btn btn-secondary" type="submit">Cancel</button>
-                <button class="btn btn-primary" type="submit">Send</button>
-            </div>
+                </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-            crossorigin="anonymous"></script>
-    </body>
+        <!-- botones -->
+        <div class="card-footer text-body-secondary d-flex justify-content-end gap-2">
+            <button class="btn btn-secondary" type="submit">Cancel</button>
+            <button class="btn btn-primary" type="submit">Send</button>
+        </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
 </html>
